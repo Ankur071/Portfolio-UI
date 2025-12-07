@@ -2,9 +2,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #020617; /* Slate 950 */
+    background-color: #020617;
+    /* Slate 950 */
     background-image: radial-gradient(circle at top right, #1e1b4b 0%, transparent 30%),
-                      radial-gradient(circle at bottom left, #1e1b4b 0%, transparent 30%);
+        radial-gradient(circle at bottom left, #1e1b4b 0%, transparent 30%);
 }
 
 /* Custom Scrollbar */
@@ -13,16 +14,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #0f172a; 
+    background: #0f172a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #334155; 
+    background: #334155;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #475569; 
+    background: #475569;
 }
 
 .glass-nav {
@@ -49,16 +50,16 @@ body {
     transform: translateY(20px);
 }
 
-.delay-100 { 
-    animation-delay: 0.1s; 
+.delay-100 {
+    animation-delay: 0.1s;
 }
 
-.delay-200 { 
-    animation-delay: 0.2s; 
+.delay-200 {
+    animation-delay: 0.2s;
 }
 
-.delay-300 { 
-    animation-delay: 0.3s; 
+.delay-300 {
+    animation-delay: 0.3s;
 }
 
 @keyframes fadeInUp {
@@ -66,4 +67,20 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
 }
